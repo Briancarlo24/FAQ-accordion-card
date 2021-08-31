@@ -9,10 +9,423 @@ html {
 *,
 *:before,
 *:after {
-  font-family: "Poppins", sans-serif;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(to bottom, #af67e9, #6565e7);
+}
+
+body main {
+  background-color: #e7e7e9;
+  border-radius: 30px;
+  width: 1000px;
+  min-height: 540px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 48px 38px -28px #414141a6;
+          box-shadow: 0px 48px 38px -28px #414141a6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main .image-container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .image-container .shadow-image-mobile {
+  display: none;
+}
+
+body main .image-container .box-image {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(-45%, -23%);
+          transform: translate(-45%, -23%);
+}
+
+body main .image-container .cut-image-overflow {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .image-container .cut-image-overflow .shadow-image {
+  background-size: cover;
+  position: absolute;
+  left: 11%;
+  -webkit-transform: translate(-64%, -7%);
+          transform: translate(-64%, -7%);
+  z-index: 0;
+}
+
+body main .image-container .cut-image-overflow .hero-image {
+  left: 0;
+  z-index: 50;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+}
+
+body main .image-container .cut-image-overflow .hero-image-mobile {
+  display: none;
+}
+
+body main .right-container {
+  padding: 75px 0;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+body main .right-container h1 {
+  color: #1d1e35;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+body main .right-container .faqs {
+  padding-right: 100px;
+}
+
+body main .right-container .faqs a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4a4b5e;
+  font-size: 14px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+body main .right-container .faqs a .questions {
+  font-size: 14px;
+}
+
+body main .right-container .faqs a .icon-arrow {
+  padding: 0 7px;
+  margin-top: 7px;
+  width: 27px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+body main .right-container .faqs .answer {
+  max-height: 20rem;
+  overflow: hidden;
+  position: relative;
+  color: #787887;
+}
+
+body main .right-container .faqs .answer p {
+  padding: 15px 15px 15px 0;
+  border-bottom: solid 1px lightgrey;
+}
+
+body main .hidden {
+  display: none;
+  max-height: 0;
+}
+
+body main .pressed {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body main .make-bold {
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+body main .add-border {
+  border-bottom: solid 1px lightgrey;
+}
+
+@media only screen and (max-width: 978px) {
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+  }
+  body main {
+    background-color: #e7e7e9;
+    border-radius: 25px;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 0 50px 70px;
+    -webkit-box-shadow: 0px 48px 38px -28px #414141a6;
+            box-shadow: 0px 48px 38px -28px #414141a6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  body main .image-container {
+    position: relative;
+    margin-bottom: 0;
+    height: 150px;
+    min-width: 400px;
+  }
+  body main .image-container .box-image {
+    display: none;
+  }
+  body main .image-container .shadow-image {
+    display: none;
+  }
+  body main .image-container .shadow-image-mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    z-index: 0;
+    width: 55%;
+  }
+  body main .image-container .cut-image-overflow {
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    min-width: 95%;
+  }
+  body main .image-container .cut-image-overflow .hero-image {
+    display: none;
+  }
+  body main .image-container .cut-image-overflow .hero-image-mobile {
+    display: block;
+    top: 0;
+    margin: 0 auto;
+    z-index: 50;
+    -webkit-transform: translate(-5.5%, -39%);
+            transform: translate(-5.5%, -39%);
+    width: 300px;
+  }
+  body main .right-container {
+    margin-right: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-size: 14px;
+    min-width: 150px;
+  }
+  body main .right-container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: -50px;
+    text-align: center;
+  }
+  body main .right-container .faqs {
+    padding-right: 0;
+  }
+  body main .right-container .faqs a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #4a4b5e;
+    font-size: 14px;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  body main .right-container .faqs a .questions {
+    font-size: 14px;
+  }
+  body main .right-container .faqs a .icon-arrow {
+    padding: 0 7px;
+    margin-top: 7px;
+    width: 27px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  body main .right-container .faqs .answer {
+    max-height: 20rem;
+    overflow: hidden;
+    position: relative;
+    color: #787887;
+    border-bottom: solid 1px lightgrey;
+  }
+  body main .right-container .faqs .answer p {
+    padding: 15px 15px 15px 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 25px 25px;
+  }
+  body main {
+    background-color: #e7e7e9;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 120px;
+    padding: 0 25px 0;
+    -webkit-box-shadow: 0px 48px 38px -28px #414141a6;
+            box-shadow: 0px 48px 38px -28px #414141a6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 245px;
+  }
+  body main .image-container {
+    position: relative;
+    margin: 40px 0;
+    height: 120px;
+  }
+  body main .image-container .shadow-image-mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
+    width: 215px;
+  }
+  body main .image-container .cut-image-overflow {
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    width: 95%;
+  }
+  body main .image-container .cut-image-overflow .hero-image-mobile {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 50;
+    -webkit-transform: translate(-12px, -61%);
+            transform: translate(-12px, -61%);
+    width: 240px;
+  }
+  body main .right-container {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    min-height: 250px;
+  }
+  body main .right-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  body main .right-container .faqs a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #4a4b5e;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  body main .right-container .faqs a .questions {
+    font-size: 13px;
+  }
+  body main .right-container .faqs a .icon-arrow {
+    padding: 0;
+    margin-top: 0;
+    width: 10.5px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  body main .right-container .faqs .answer {
+    max-height: 20rem;
+    overflow: hidden;
+    position: relative;
+    color: #787887;
+    border-bottom: solid 1px lightgrey;
+  }
+  body main .right-container .faqs .answer p {
+    padding: 0 10px 15px 0;
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
