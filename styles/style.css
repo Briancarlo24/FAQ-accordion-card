@@ -36,7 +36,7 @@ body {
 }
 
 body main {
-  background-color: #e7e7e9;
+  background-color: #fff;
   border-radius: 30px;
   width: 1000px;
   min-height: 540px;
@@ -149,6 +149,10 @@ body main .right-container .faqs a .questions {
   font-size: 14px;
 }
 
+body main .right-container .faqs a .questions:hover {
+  color: #f47c57;
+}
+
 body main .right-container .faqs a .icon-arrow {
   padding: 0 7px;
   margin-top: 7px;
@@ -197,7 +201,7 @@ body main .add-border {
     padding: 0 50px;
   }
   body main {
-    background-color: #e7e7e9;
+    background-color: #fff;
     border-radius: 25px;
     max-width: 600px;
     min-width: 300px;
@@ -326,7 +330,7 @@ body main .add-border {
     padding: 25px 25px;
   }
   body main {
-    background-color: #e7e7e9;
+    background-color: #fff;
     border-radius: 15px;
     width: 100%;
     min-height: 500px;
@@ -382,7 +386,8 @@ body main .add-border {
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 40px;
-    min-height: 250px;
+    height: 250px;
+    overflow-y: scroll;
   }
   body main .right-container h1 {
     font-size: 2.5rem;
