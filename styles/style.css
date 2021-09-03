@@ -145,12 +145,12 @@ body main .right-container .faqs a {
   cursor: pointer;
 }
 
-body main .right-container .faqs a .questions {
-  font-size: 14px;
+body main .right-container .faqs a:hover {
+  color: #f47c57;
 }
 
-body main .right-container .faqs a .questions:hover {
-  color: #f47c57;
+body main .right-container .faqs a .questions {
+  font-size: 14px;
 }
 
 body main .right-container .faqs a .icon-arrow {

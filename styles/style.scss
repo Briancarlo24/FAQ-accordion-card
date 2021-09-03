@@ -124,12 +124,11 @@ body {
 
           padding: 20px 0;
           cursor: pointer;
-
+          &:hover {
+            color: $soft-red;
+          }
           .questions {
             font-size: 14px;
-            &:hover {
-              color: $soft-red;
-            }
           }
           .icon-arrow {
             padding: 0 7px;
